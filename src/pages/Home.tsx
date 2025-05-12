@@ -166,15 +166,11 @@ const HomePage: React.FC = () => {
               )
             }
 
-            {/* {!loading && !error && posts.length > 0 && posts.map(post => (
+             {!loading && !error && posts.length > 0 && posts.map(post => (
               <PostCard
                 key={post.postId}
                 id={post.postId}
-                user={{
-                  name: post.user.userName,
-                  username: post.user.email.split('@')[0],
-                  avatar: post.user.profileImage || '/api/placeholder/40/40'
-                }}
+                
                 content={post.description}
                 image={post.mediaUrls && post.mediaUrls.length > 0 ? post.mediaUrls[0] : undefined}
                 likes={post.likeCount || 0}
@@ -184,7 +180,7 @@ const HomePage: React.FC = () => {
                 onEdit={handleEditPost}
                 onDelete={handleDeletePost}
               />
-            ))} */}
+            ))} 
           </div>
         </div>
         
